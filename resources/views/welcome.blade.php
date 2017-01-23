@@ -89,6 +89,8 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+
+		<p>Welcome to the beginning of My Writing Notebook.</p>
             </div>
         </div>
     </body>
