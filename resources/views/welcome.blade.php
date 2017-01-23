@@ -90,7 +90,8 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
 
-		<p>Welcome to the beginning of My Writing Notebook.</p>
+		        <p>Welcome to the beginning of My Writing Notebook.</p>
+                <p>Coming Soon!</p>
             </div>
         </div>
     </body>
