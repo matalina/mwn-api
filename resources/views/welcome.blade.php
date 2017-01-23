@@ -78,6 +78,7 @@
             @endif
 
             <div class="content">
+                <h1>My Writing Notebook</h1>
                 <div class="title m-b-md">
                     Laravel
                 </div>
