@@ -78,6 +78,7 @@ class SetupApp extends Seeder
         $project = Project::create([
             'name' => 'Starter Project',
             'ordering' => 0,
+            'user_id' => $user->id,
         ]);
 
         $folder = Folder::create([
@@ -85,6 +86,7 @@ class SetupApp extends Seeder
             'ordering' => 0,
             'project_id' => $project->id,
             'folder_id' => null,
+            'user_id' => $user->id,
         ]);
 
         $page = Page::create([
@@ -93,7 +95,8 @@ class SetupApp extends Seeder
             'extension' => 'md',
             'ordering' => 0,
             'project_id' => $project->id,
-            'folder_id' => null
+            'folder_id' => null,
+            'user_id' => $user->id,
         ]);
 
         $page->updateSlug();
@@ -105,6 +108,7 @@ class SetupApp extends Seeder
             'ordering' => 0,
             'project_id' => $project->id,
             'folder_id' => $folder->id,
+            'user_id' => $user->id,
         ]);
 
         $page->updateSlug();

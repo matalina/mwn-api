@@ -30,6 +30,7 @@ class SetupApp extends Migration
             // belongs to
             $table->integer('project_id')->unsigned();
             $table->integer('folder_id')->unsigned()->nullable();
+            $table->integer('user_id')->unsigned();
 
             // dropbox
             $table->string('location')->nullable();
@@ -50,6 +51,9 @@ class SetupApp extends Migration
             // order of display
             $table->integer('ordering');
 
+            // belongs to
+            $table->integer('user_id')->unsigned();
+
             // dropbox
             $table->string('location')->nullable();
 
@@ -68,6 +72,7 @@ class SetupApp extends Migration
             // belongs to
             $table->integer('project_id')->unsigned();
             $table->integer('folder_id')->unsigned()->nullable();
+            $table->integer('user_id')->unsigned();
 
             // order of display
             $table->integer('ordering');
@@ -86,6 +91,9 @@ class SetupApp extends Migration
 
             // elements
             $table->string('name');
+
+            // belongs to
+            $table->integer('user_id')->unsigned();
 
             $table->softDeletes();
             $table->timestamps();
