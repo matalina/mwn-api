@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('folder', 'FolderController');
+Route::resource('meta-data', 'MetaDataController');
+Route::resource('page', 'PageController');
+Route::resource('project', 'ProjectController');
+Route::resource('tag', 'TagController');
+Route::resource('user', 'UserController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

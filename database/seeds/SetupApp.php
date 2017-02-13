@@ -4,7 +4,7 @@ use App\Notebook\Folder;
 use App\Notebook\MetaData;
 use App\Notebook\Page;
 use App\Notebook\Project;
-use App\User;
+use App\Notebook\User;
 use Illuminate\Database\Seeder;
 
 class SetupApp extends Seeder
